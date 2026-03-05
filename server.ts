@@ -10,11 +10,11 @@ import chatRoutes from './backend/routes/chatRoutes';
 import noteRoutes from './backend/routes/noteRoutes';
 import taskRoutes from './backend/routes/taskRoutes';
 import pomodoroRoutes from './backend/routes/pomodoroRoutes';
-import pdfRoutes from './backend/routes/pdfRoutesgit';
+import pdfRoutes from './backend/routes/pdfRoutes';
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   // Connect to database
   await connectDB();
