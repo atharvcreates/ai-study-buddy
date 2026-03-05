@@ -3,14 +3,14 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import { createServer as createViteServer } from 'vite';
-import { connectDB } from './backend/config/db.js';
+import { connectDB } from './backend/config/db';
 
-import authRoutes from './backend/routes/authRoutes.js';
-import chatRoutes from './backend/routes/chatRoutes.js';
-import noteRoutes from './backend/routes/noteRoutes.js';
-import taskRoutes from './backend/routes/taskRoutes.js';
-import pomodoroRoutes from './backend/routes/pomodoroRoutes.js';
-import pdfRoutes from './backend/routes/pdfRoutes.js';
+import authRoutes from './backend/routes/authRoutes';
+import chatRoutes from './backend/routes/chatRoutes';
+import noteRoutes from './backend/routes/noteRoutes';
+import taskRoutes from './backend/routes/taskRoutes';
+import pomodoroRoutes from './backend/routes/pomodoroRoutes';
+import pdfRoutes from './backend/routes/pdfRoutesgit';
 
 async function startServer() {
   const app = express();
